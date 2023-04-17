@@ -14,10 +14,11 @@ const refs = { overview, messiah, man, divine };
 const handleButton = (name: string) => {
   const norm = name.toLowerCase();
   current.value = norm;
+  // @ts-ignore
   nextTick(() => refs[norm].value.$el.scrollIntoView({ behavior: "smooth" }));
 };
 
-const scriptures = ref<Object>(ScriptureList);
+const scriptures = ref(ScriptureList);
 </script>
 
 <template>

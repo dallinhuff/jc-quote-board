@@ -1,10 +1,10 @@
-interface Scripture {
+export interface Scripture {
   reference: string;
   body: string;
   link: string;
 }
 
-interface SaviorScriptures {
+export interface SaviorScriptures {
   messiah: Array<Scripture>;
   man: Array<Scripture>;
   divine: Array<Scripture>;
